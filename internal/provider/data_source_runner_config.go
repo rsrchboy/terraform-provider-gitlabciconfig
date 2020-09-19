@@ -1,4 +1,4 @@
-package gitlabci
+package provider
 
 import (
 	"bytes"
@@ -19,9 +19,9 @@ import (
 	rdhelpers "gitlab.com/gitlab-org/gitlab-runner/helpers/docker"
 	"gitlab.com/gitlab-org/gitlab-runner/helpers/ssh"
 	"gitlab.com/gitlab-org/gitlab-runner/referees"
-	"gitlab.com/rsrchboy/terraform-provider-gitlabci/helper/configtemplate"
-	"gitlab.com/rsrchboy/terraform-provider-gitlabci/helper/runner"
-	"gitlab.com/rsrchboy/terraform-provider-gitlabci/internal/structs"
+	"gitlab.com/rsrchboy/terraform-provider-gitlabciconfig/helper/configtemplate"
+	"gitlab.com/rsrchboy/terraform-provider-gitlabciconfig/helper/runner"
+	"gitlab.com/rsrchboy/terraform-provider-gitlabciconfig/internal/structs"
 )
 
 type schemaMap map[string]*schema.Schema

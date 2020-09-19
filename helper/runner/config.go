@@ -7,7 +7,7 @@ import (
 	tree "github.com/DiSiqueira/GoTree"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/imdario/mergo"
-	"gitlab.com/rsrchboy/terraform-provider-gitlabci/internal/structs"
+	"gitlab.com/rsrchboy/terraform-provider-gitlabciconfig/internal/structs"
 )
 
 type schemaMap map[string]*schema.Schema

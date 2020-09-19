@@ -1,5 +1,5 @@
 terraform.tfstate*
 .terraform/
-terraform-provider-gitlabci
+terraform-provider-*
 crash.log
 /Session*.vim

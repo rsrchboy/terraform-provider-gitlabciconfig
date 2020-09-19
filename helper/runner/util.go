@@ -9,7 +9,7 @@ import (
 	rdhelpers "gitlab.com/gitlab-org/gitlab-runner/helpers/docker"
 	rssh "gitlab.com/gitlab-org/gitlab-runner/helpers/ssh"
 	"gitlab.com/gitlab-org/gitlab-runner/referees"
-	"gitlab.com/rsrchboy/terraform-provider-gitlabci/internal/structs"
+	"gitlab.com/rsrchboy/terraform-provider-gitlabciconfig/internal/structs"
 )
 
 func NameForSchema(f *structs.Field) string {

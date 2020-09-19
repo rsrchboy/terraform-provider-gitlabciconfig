@@ -1,4 +1,4 @@
-package gitlabci
+package provider
 
 import (
 	"fmt"
@@ -10,23 +10,19 @@ import (
 
 func Provider() *schema.Provider {
 	return &schema.Provider{
-		Schema: map[string]*schema.Schema{
-			"base_url": {
-				Type:         schema.TypeString,
-				Optional:     true,
-				DefaultFunc:  schema.EnvDefaultFunc("GITLAB_BASE_URL", "https://gitlab.com/api/v4"),
-				Description:  "The GitLab base API URL",
-				ValidateFunc: validateURLFunc,
-			},
-		},
+		// Schema: map[string]*schema.Schema{
+		// 	"base_url": {
+		// 		Type:         schema.TypeString,
+		// 		Optional:     true,
+		// 		DefaultFunc:  schema.EnvDefaultFunc("GITLAB_BASE_URL", "https://gitlab.com/api/v4"),
+		// 		Description:  "The GitLab base API URL",
+		// 		ValidateFunc: validateURLFunc,
+		// 	},
+		// },
 		DataSourcesMap: map[string]*schema.Resource{
-			"gitlabci_runner_config": dataSourceGitlabCIRunnerConfig(),
-			"gitlabci_environment":   dataSourceGitlabCIEnvironment(),
+			"gitlabciconfig_runner_config": dataSourceGitlabCIRunnerConfig(),
 		},
-		ResourcesMap: map[string]*schema.Resource{
-			"gitlabci_runner_token": resourceGitlabRunner(),
-		},
-		ConfigureFunc: providerConfigure,
+		// ConfigureFunc: providerConfigure,
 	}
 }
 

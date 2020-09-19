@@ -1,4 +1,4 @@
-module gitlab.com/rsrchboy/terraform-provider-gitlabci
+module gitlab.com/rsrchboy/terraform-provider-gitlabciconfig
 
 go 1.13
 
@@ -23,14 +23,12 @@ require (
 	github.com/hashicorp/terraform-plugin-sdk v1.4.1
 	github.com/imdario/mergo v0.3.8
 	github.com/morikuni/aec v1.0.0 // indirect
-	github.com/parnurzeal/gorequest v0.2.16
 	github.com/pkg/errors v0.8.1
 	github.com/stoewer/go-strcase v1.1.0
 	github.com/tevino/abool v0.0.0-20170917061928-9b9efcf221b5 // indirect
 	github.com/urfave/cli v1.22.2 // indirect
 	gitlab.com/gitlab-org/gitlab-runner v1.11.1-0.20200110014830-8e5683f82927
 	k8s.io/api v0.17.0 // indirect
-	moul.io/http2curl v1.0.0 // indirect
 )
 
 // replace github.com/docker/docker v1.4.2-0.20190822180741-9552f2b2fdde => github.com/docker/engine v1.4.2-0.20190822180741-9552f2b2fdde
